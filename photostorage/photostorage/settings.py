@@ -124,6 +124,4 @@ STATIC_URL = '/static/'
 #--------------
 
 MEDIA_URL = 'http://127.0.0.1:8000/'
-MEDIA_ROOT = ''   # '/home/<your location>/Gallery/photostorage/photogallery/'
-
-
+MEDIA_ROOT = ''  # add your path here as '/home/<path>/Gallery/photostorage/photogallery/'
