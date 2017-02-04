@@ -1,2 +1,3 @@
 # gallery
-Simple gallery [Django]
+
+Stand-alone gallery written in Django. 
