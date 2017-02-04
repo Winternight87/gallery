@@ -123,7 +123,5 @@ STATIC_URL = '/static/'
 
 #--------------
 
-MEDIA_URL = 'http://127.0.0.1:8000/'
-MEDIA_ROOT = ''   # '/home/<your location>/Gallery/photostorage/photogallery/'
-
-
+MEDIA_URL = 'http://moonblast.no-ip.biz:8000/' #'http://192.168.1.35:8000/' #'http://127.0.0.1:8000/'
+MEDIA_ROOT = '/home/foxhound/Projects/Gallery/photostorage/photogallery/'
