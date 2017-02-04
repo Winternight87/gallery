@@ -1,0 +1,10 @@
+# pyc files #
+#############
+*.pyc
+
+# user.txt
+user.txt
+
+# settings.py
+settings.py
+
