@@ -1,0 +1,58 @@
+/* Gallery picture elements */
+
+.frame {
+  display: inline-block;
+}
+
+.frame img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;  
+  border-style: solid;
+  border-width: 2px;
+  border-color: #AAAAAA;
+}
+  
+#fullsize {
+  max-width: 100%;
+  height: auto;
+}
+  
+  
+.sq_preview {     
+  width: auto;
+  height: auto;
+  padding: 20px 20px 20px 20px;
+  z-index: -1;
+}
+
+.sq_preview:hover .popup-frame {     
+  display: block;
+  position:fixed;
+}
+
+
+
+
+
+/* Popup elements */
+
+/*
+couponcode
+  coupontooltip
+
+sq_preview
+  popup-frame
+*/
+
+.popup-frame {  
+  display: none;
+  background: #00CC99;
+  color: #FFFFFF;
+  position:absolute;
+  height: 50px;
+  width: 180px;
+  z-index: 1;  
+  padding: 10px 10px 10px 10px;
+}

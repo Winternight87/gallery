@@ -1,0 +1,5 @@
+Django==1.10.5
+django-simple-captcha==0.5.3
+olefile==0.44
+Pillow==4.0.0
+six==1.10.0
