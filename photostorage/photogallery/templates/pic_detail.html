@@ -4,10 +4,7 @@
 {% block content %}
     <div>      
       <h3>{{ pic.pic_title }}</h3>
-      <br>
       <img src="{{ pic.pic_image.url }}" id="fullsize"></img>
-      <br>
-      <br>
       <p class="date">[{{pic.pic_date.date.year}}/{{pic.pic_date.date.month}}/{{pic.pic_date.date.day}} at {{pic.pic_date.time}}] by anonymous</p>
       <pre class="textcomment">{{ pic.pic_text }}</pre>
       <h3>Comments</h3>

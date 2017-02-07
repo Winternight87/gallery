@@ -19,6 +19,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  padding-bottom: 20px;
+}
+
 .wrapper{
   display: table;
   background: #DADADA;
@@ -35,7 +39,7 @@ body {
 .content {
   height: auto;  
   background: #CCF4FF;
-  padding: 20px 20px 20px 20px;
+  padding: 20px;
 }
 
 
@@ -67,7 +71,7 @@ body {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0px;
-  padding: 10px 25px 10px 25px;
+  padding: 10px 25px;
   text-decoration: none;
 }
 
@@ -122,9 +126,10 @@ body {
 
 .footer {  
   background: #0077BB;   
-  height: 85px;
+  height: 65px;
   color: #FFFFFF;
   text-align: center;
+  padding-top: 20px;
 }
 
 .footer a {
