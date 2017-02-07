@@ -1,18 +1,19 @@
 {% extends "index.html" %}
 {% load static %}
+{% load markdown_deux_tags %}
 
 {% block content %}
     <div>      
       <h3>{{ pic.pic_title }}</h3>
       <img src="{{ pic.pic_image.url }}" id="fullsize"></img>
       <p class="date">[{{pic.pic_date.date.year}}/{{pic.pic_date.date.month}}/{{pic.pic_date.date.day}} at {{pic.pic_date.time}}] by anonymous</p>
-      <pre class="textcomment">{{ pic.pic_text }}</pre>
+      <pre class="textcomment">{{ pic.pic_text|markdown }}</pre>
       <h3>Comments</h3>
       {% for comment in comments %}
         <div class="h_line"></div>
         <div class="commentblock">   
           <p class="date">[{{comment.comment_date.date.year}}/{{comment.comment_date.date.month}}/{{comment.comment_date.date.day}} at {{comment.comment_date.time}}] by anonymous</p>
-          <pre class="textcomment">{{comment.comment_text}}</pre>
+          <pre class="textcomment">{{comment.comment_text|markdown}}</pre>
         </div>
                 
       {% endfor %}

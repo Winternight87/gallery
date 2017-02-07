@@ -1,7 +1,8 @@
 /* Fonts */
 @font-face {
     font-family: 'FallingSky';
-    src: url('FallingSkyCond.otf') format('opentype'); 
+    src: url('fonts/FallingSkyCond.woff') format('woff'), 
+         url('fonts/FallingSkyCond.ttf')  format('truetype');
 }
 
 /* Page formatting & styling*/

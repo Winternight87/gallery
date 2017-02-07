@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'photogallery',
     'captcha',
+    'markdown_deux',
 ]
 
 MIDDLEWARE = [
@@ -124,4 +125,4 @@ STATIC_URL = '/static/'
 #--------------
 
 MEDIA_URL = 'http://127.0.0.1:8000/'
-MEDIA_ROOT = '' # specify your locations as '/home/<your path>/Gallery/photostorage/photogallery/'
+MEDIA_ROOT = '/home/<your path>/Gallery/photostorage/photogallery/'
