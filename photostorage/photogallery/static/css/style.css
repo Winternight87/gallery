@@ -21,20 +21,15 @@ body {
 
 .wrapper{
   display: table;
+  background: #DADADA;
   width: 100%
 }
 
 .centerblock{
-  display: table-cell;
   width:1030px;
-  float:left;
+  margin: 0 auto;
   box-shadow: -5px 2px 5px #888888, 5px 2px 5px #888888;
-}
-
-.sideblock {
-  background: #DADADA;
-  display: table-cell;  
-  width:50%;
+  overflow: auto;
 }
 
 .content {
