@@ -1,14 +1,10 @@
-var popup = document.getElementsByClassName('popup-frame');
-
-document.addEventListener('mousemove', fn, false);
-
-
-function fn(e) {
+function showTooltip(x) {
+  Tooltip = x.childNodes[1];
+  document.addEventListener('mousemove', fn, false);
   
-  for (var i=popup.length; i--;) {
-    popup[i].style.left = e.pageX + 10 + 'px';
-    popup[i].style.top = e.pageY + 20 + 'px';    
+  function fn(e) {
+    Tooltip.style.left = e.pageX + 10 + 'px';
+    Tooltip.style.top = e.pageY + 20 + 'px'; 
   }
-
+  
 }
-
