@@ -53,6 +53,11 @@ p {
   background-image: -o-linear-gradient(top, #00CC99, #00A67D);
   background-image: linear-gradient(to bottom, #00CC99, #00A67D);
   padding: 10px 25px;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 #button-new:hover {
@@ -62,14 +67,6 @@ p {
   background-image: -ms-linear-gradient(top, #FFCC66, #FF4444);
   background-image: -o-linear-gradient(top, #FFCC66, #FF4444);
   background-image: linear-gradient(to bottom, #FFCC66, #FF4444);
-}
-
-#button-new p {
-  color: #FFFFFF;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 18px;
 }
 
 #logo {

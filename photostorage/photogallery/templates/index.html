@@ -16,16 +16,10 @@
   <body>
     <div class="wrapper">
       <div class="header">        
-        <a href="/">
-          <div class="header-element" id="logo">
-            <img src="{% static "img/camera.png" %}"></img>
-          </div>  
+        <a class="header-element" id="logo" href="/">
+          <img src="{% static "img/camera.png" %}"></img>
         </a>        
-        <a href={% url 'pic_upload' %}>
-          <div class="header-element" id="button-new">
-            <p>New</p>
-          </div>
-        </a>
+        <a class="header-element" id="button-new" href={% url 'pic_upload' %}>New</a>
       </div>        
       <div class="content">
         {% block content %}{% endblock %}
