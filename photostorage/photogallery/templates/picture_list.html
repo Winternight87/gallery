@@ -3,12 +3,11 @@
 
 {% block content %}
   {% for pic in pictures %}
-    <div onmouseover="showTooltip(this)" class="preview-frame">
-      <div class="tooltip-frame">
-        <div>{{ pic.pic_title }}</div>
-        <div class="date">{{pic.pic_date.date.year}}/{{pic.pic_date.date.month}}/{{pic.pic_date.date.day}} at {{pic.pic_date.time}}</div>
-      </div>
-      <a href="{% url 'pic_detail' pk=pic.pk %}"><img src="{{ pic.pic_image.url }}"></img></a>
+    <div onmouseover="showTooltip(this)" onmouseout="hideTooltip()" class="preview-frame" data-title="{{ pic.pic_title }}" data-date="{{pic.pic_date.date.year}}/{{pic.pic_date.date.month}}/{{pic.pic_date.date.day}} at {{pic.pic_date.time}}">
+      <a href="{% url 'pic_detail' pk=pic.pk %}" ><img src="{{ pic.pic_image.url }}" /></a>
     </div> 
   {% endfor %}    
 {% endblock %}
+
+
+
