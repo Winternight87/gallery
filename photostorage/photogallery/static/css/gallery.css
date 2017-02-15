@@ -27,20 +27,12 @@
 /* Tooltip elements */
 
 #tooltip-frame { 
-  display: block; 
-  //none;
+  display: none;
   background: #00CC99;
   color: #FFFFFF;
   position:absolute;
   overflow: auto;
-  //height: 50px;
   width: 160px;
   z-index: 1; 
   padding: 10px 10px 10px 10px;
 }
-/*
-.preview-frame:hover #tooltip-frame {     
-  display: block;
-  position:fixed;
-}
-*/
